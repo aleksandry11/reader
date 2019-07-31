@@ -23,7 +23,7 @@ const PrivateRoute = ({render: Component, ...rest}) => {
 const routes = () => (
     <Switch>
         <Route path="/login" render={ () => <Auth activeTab={"login"} /> }/>
-        <Route path="/sign-up" render={ () => <Auth activeTab={"signup"} /> }/>
+        <Route path="/sign-up" render={ () => <Auth activeTab={"sign-up"} /> }/>
         <Route path='/unauthorized' component={Unauthorized} />
         <PrivateRoute path='/' render={() => <BookList />} />
     </Switch>

@@ -40,7 +40,7 @@ const SignUpBlock = (signUpError, handleSignUp) => {
 }
 
 const AuthPage = ({ activeTab, signUpDone, loginError, signUpError, errorClear, handleLogin, handleSignUp }) => {
-
+    console.log(signUpDone, activeTab);
     if (signUpDone && activeTab === "sign-up") return <Redirect to="/login" />
 
     return (

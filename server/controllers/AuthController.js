@@ -41,7 +41,7 @@ class AuthController extends BaseController
                 const { password, ...reqUser } = user[0].dataValues;
                 bcrypt.compare(req.body.password, password, (err, valid) => {
                     if (valid) {
-                        jwt.sign({reqUser}, 'secretKey', { expiresIn: '604800' }, (err, token) => {
+                        jwt.sign({reqUser}, 'secretKey', { expiresIn: '604800s' }, (err, token) => {
                             res.send({token});
                         });
                     } else {
