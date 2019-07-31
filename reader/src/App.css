@@ -1,5 +1,23 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.App a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.App .logo {
+  margin-bottom: 40px;
+}
+
+.nav-links {
+  margin-bottom: 30px;
 }
 
 .App-logo {
@@ -30,4 +48,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.login input, .signup input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
 }

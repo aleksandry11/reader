@@ -13,7 +13,7 @@ app.use((req, res, next) => {
     next();
 });
 
-const routes = require('./routes/routes')(app);
+const routes = require('./routes')(app);
 
 app.listen(8080, () => {
     console.log('Server running on 8080!');
