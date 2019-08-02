@@ -29,7 +29,7 @@ const Unauthorized = ({ userLogin, isLogin, location, loginError, isLoading }) =
         <React.Fragment>
             <div>
                 {
-                    isLoading ?
+                    !isLoading ?
                         <UnauthorizedMessage handleLogin={handleLogin} loginError={loginError} /> :
                         null
                 }

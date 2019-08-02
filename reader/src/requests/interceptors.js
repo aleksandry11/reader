@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { USER_LOGOUT } from '../actinoTypes';
+import { USER_LOGOUT } from '../actionTypes';
 
 export default {
     setupInterceptors: (store, history) => {
-        axios.interceptors.response.use(reponse => {
-            return reponse;
+        axios.interceptors.response.use(response => {
+            return response;
         }, error => {
             switch(error.status) {
                 case 401:

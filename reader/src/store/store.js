@@ -3,14 +3,13 @@ import { applyMiddleware, createStore } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { createBrowserHistory } from 'history';
 
-import httpService from '../api_client/interceptors';
+import httpService from '../requests/interceptors';
 import reducers from '../reducers/index';
-import { logger } from '../middleware/logger';
 import sagas from '../sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
-export const store = createStore(reducers, composeWithDevTools(applyMiddleware(logger, sagaMiddleware)));
+export const store = createStore(reducers, composeWithDevTools(applyMiddleware(sagaMiddleware)));
 sagaMiddleware.run(sagas);
 
 export const history = createBrowserHistory();

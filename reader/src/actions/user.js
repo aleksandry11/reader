@@ -1,4 +1,10 @@
-import { USER_LOGIN_REQUEST, USER_SIGN_UP_REQUEST, USER_LOGOUT, ERROR_CLEAR } from "../actinoTypes";
+import {
+    USER_LOGIN_REQUEST,
+    USER_SIGN_UP_REQUEST,
+    USER_LOGOUT,
+    ERROR_CLEAR,
+    NO_TOKEN_VERIFICATION
+} from "../actionTypes";
 
 export const userLogin = (data) => {
     return {
@@ -23,5 +29,11 @@ export const userLogout = () => {
 export const errorClear = () => {
     return {
         type: ERROR_CLEAR
+    }
+}
+
+export const noTokenVerification = () => {
+    return {
+        type: NO_TOKEN_VERIFICATION
     }
 }

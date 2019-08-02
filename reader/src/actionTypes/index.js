@@ -1,4 +1,5 @@
 export const ERROR_CLEAR = 'ERROR_CLEAR';
+export const NO_TOKEN_VERIFICATION = 'NO_TOKEN_VERIFICATION';
 
 // login
 export const USER_LOGIN_REQUEST = 'USER_LOGIN_REQUEST';
@@ -11,5 +12,9 @@ export const USER_SIGN_UP_SUCCESS = 'USER_SIGN_UP_SUCCESS';
 export const USER_SIGN_UP_ERROR = 'USER_SIGN_UP_ERROR';
 
 // logout
-
 export const USER_LOGOUT = 'USER_LOGOUT';
+
+// books
+export const BOOK_UPLOAD_REQUEST = 'BOOK_UPLOAD_REQUEST';
+export const BOOK_UPLOAD_SUCCESS = 'BOOK_UPLOAD_SUCCESS';
+export const BOOK_UPLOAD_ERROR = 'BOOK_UPLOAD_ERROR';

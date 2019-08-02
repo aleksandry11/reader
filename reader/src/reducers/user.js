@@ -1,13 +1,13 @@
-import { 
-    USER_LOGIN_REQUEST, 
-    USER_LOGIN_SUCCESS, 
-    USER_LOGIN_ERROR, 
-    USER_SIGN_UP_REQUEST, 
-    USER_SIGN_UP_SUCCESS, 
-    USER_SIGN_UP_ERROR, 
-    USER_LOGOUT, 
-    ERROR_CLEAR
-} from "../actinoTypes";
+import {
+    USER_LOGIN_REQUEST,
+    USER_LOGIN_SUCCESS,
+    USER_LOGIN_ERROR,
+    USER_SIGN_UP_REQUEST,
+    USER_SIGN_UP_SUCCESS,
+    USER_SIGN_UP_ERROR,
+    USER_LOGOUT,
+    ERROR_CLEAR, NO_TOKEN_VERIFICATION
+} from "../actionTypes";
 
 const initialState = {
     isLogin: false,
@@ -18,7 +18,7 @@ const initialState = {
     isLoading: true
 }
 
-export default function userReducer (state = initialState, action) {
+export default function userReducer(state = initialState, action) {
     switch(action.type) {
         // user login
         case USER_LOGIN_REQUEST: 
@@ -35,7 +35,8 @@ export default function userReducer (state = initialState, action) {
                 isLogin: true,
                 user: action.payload,
                 signUpDone: false,
-                loginError: null
+                loginError: null,
+                isLoading: false,
             }
 
         case USER_LOGIN_ERROR:
@@ -67,6 +68,7 @@ export default function userReducer (state = initialState, action) {
 
         // user logout
         case USER_LOGOUT:
+            localStorage.removeItem('br_token');
             return {
                 ...state,
                 isLogin: false,
@@ -79,6 +81,12 @@ export default function userReducer (state = initialState, action) {
                 ...state,
                 loginError: null,
                 signUpError: null
+            }
+
+        case NO_TOKEN_VERIFICATION:
+            return {
+                ...state,
+                isLoading: false
             }
             
         default:

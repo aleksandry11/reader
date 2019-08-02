@@ -1,5 +1,5 @@
 import { takeEvery, put } from 'redux-saga/effects';
-import { login, signUp } from '../api_client/user';
+import { login, signUp } from '../requests/user';
 import jwt from 'jsonwebtoken';
 
 import { 
@@ -9,7 +9,7 @@ import {
     USER_SIGN_UP_REQUEST, 
     USER_SIGN_UP_SUCCESS, 
     USER_SIGN_UP_ERROR 
-} from '../actinoTypes';
+} from '../actionTypes';
 
 
 // login
@@ -21,11 +21,10 @@ function* watchUserLogin() {
 function* userLogin(action) {
     try {
         const result = yield login(action.payload);
-        console.log(result);
         if (result.data.token) {
-            localStorage.setItem('token', result.data.token);
+            localStorage.setItem('br_token', result.data.token);
             let user = jwt.decode(result.data.token);
-    
+
             yield put({type: USER_LOGIN_SUCCESS, payload: user});
         } else {
             yield put({type: USER_LOGIN_ERROR, payload: result.data.errors});    
@@ -45,8 +44,11 @@ function* userSignUp(action) {
     try {
 
         const result = yield signUp(action.payload);
-        console.log('result: ', result);
-        yield put({type: USER_SIGN_UP_SUCCESS });
+        if (result.data.errors) {
+            yield put({type: USER_SIGN_UP_ERROR, payload: result.data.errors})
+        } else {
+            yield put({type: USER_SIGN_UP_SUCCESS });
+        }
     } catch(error) {
         yield put({type: USER_SIGN_UP_ERROR, payload: error.response.data})
     }

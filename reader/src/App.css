@@ -1,15 +1,31 @@
+html, body {
+  min-height: 100vh;
+}
+#root {
+  min-height: 100vh;
+}
+
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .App {
   text-align: center;
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  position: relative;
 }
 .App a {
-  margin: 0 10px;
-  padding: 10px 20px;
+  margin: 0 5px;
+  padding: 7px 14px;
   background-color: black;
   color: white;
+  display: inline-block;
   text-decoration: none;
 }
 .App .logo {
@@ -17,7 +33,10 @@
 }
 
 .nav-links {
-  margin-bottom: 30px;
+  margin: 30px 0;
+}
+.nav-links a.active {
+  background-color: deeppink;
 }
 
 .App-logo {
@@ -35,6 +54,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+#add-book {
+  display: none;
 }
 
 .App-link {
@@ -55,4 +77,10 @@
   display: block;
   margin: 10px 0;
   padding: 10px 20px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

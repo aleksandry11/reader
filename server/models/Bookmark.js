@@ -1,7 +1,8 @@
+const BaseModel = require('./BaseModel');
 const Sequelize = require('sequelize');
 const sequelize = require('../db');
 
-class Bookmark extends Sequelize.model {}
+class Bookmark extends BaseModel {}
 
 Bookmark.init({
     // attributes

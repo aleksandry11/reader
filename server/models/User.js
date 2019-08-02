@@ -1,7 +1,8 @@
+const BaseModel = require('./BaseModel');
 const Sequelize = require('sequelize');
 const sequelize = require('../db');
 
-class User extends Sequelize.Model {}
+class User extends BaseModel {}
 
 User.init({
     // attributes
