@@ -6,6 +6,7 @@ import { store } from '../store/store';
 import Auth from '../containers/auth/Auth';
 import Unauthorized from '../containers/auth/Unauthorized';
 import BookList from '../containers/books/BookList';
+import SingleBook from "../containers/books/SingleBook";
 
 
 const ProtectedRoute = ({render: Component, ...rest}) => {
@@ -27,7 +28,10 @@ const routes = () => (
         <Route path="/login" render={ () => <Auth activeTab={"login"} /> }/>
         <Route path="/sign-up" render={ () => <Auth activeTab={"sign-up"} /> }/>
         <Route path='/unauthorized' component={Unauthorized} />
-        <ProtectedRoute path='/' render={() => <BookList />} />
+        <ProtectedRoute exact path='/' render={() => <BookList />} />
+        <ProtectedRoute path='/books/:id' render={ ({ match }) =>
+            <SingleBook bookId={match.params.id}/>
+        } />
     </Switch>
 )
 

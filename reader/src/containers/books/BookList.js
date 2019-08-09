@@ -1,5 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from 'react';
 
 import { connect } from 'react-redux';
 
@@ -8,27 +7,21 @@ import {userLogout} from "../../actions/user";
 import { Redirect } from 'react-router-dom';
 
 import AddBookForm from '../../components/books/forms/AddBookForm';
+import Logout from '../../components/LogoutBtn';
 
-import { uploadBook } from '../../actions/book';
+import {fetchAll, uploadBook} from '../../actions/book';
+import UserBooksList from "../../components/books/UserBooks/UserBooksList";
 
-const Logout = styled.button`
-    width: 50px;
-    border: none;
-    border-left: 1px solid white;
-    background-color: black;
-    color: deepskyblue;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-`;
+
 
 const mapStateToProps = (state) => ({
     isLogin: state.userReducer.isLogin,
     uploading: state.bookReducer.uploading,
     uploadDone: state.bookReducer.uploadDone,
-    uploadError: state.bookReducer.uploadError
+    uploadError: state.bookReducer.uploadError,
+    books: state.bookReducer.books,
+    fetchingError: state.bookReducer.fetchingError,
+    fetchingDone: state.bookReducer.fetchingDone
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -37,12 +30,18 @@ const mapDispatchToProps = (dispatch) => ({
     },
     uploadBook: (data) => {
         dispatch(uploadBook(data));
+    },
+    fetchAll: () => {
+        dispatch(fetchAll());
     }
 });
 
 
 const BookList = (props) => {
-    const { userLogout, isLogin, uploadBook } = props;
+
+    const { userLogout, isLogin, uploadBook, books, fetchAll, fetchingDone, uploadError, } = props;
+
+    useEffect(() => fetchAll(), []);
 
     const logOut = () => {
         userLogout();
@@ -56,6 +55,9 @@ const BookList = (props) => {
                 <p>Books</p>
                 <Logout onClick={logOut}>Logout</Logout>
             </Header>
+            {
+                fetchingDone ? <UserBooksList books={books} uploadError={uploadError} /> : null
+            }
             <AddBookForm onSubmit={uploadBook} />
         </React.Fragment>
     );

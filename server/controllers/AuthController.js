@@ -1,64 +1,75 @@
 const BaseController = require('./BaseController');
-const User = require('../models/User');
+const User = require('../database/models/index').User;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const { auth } = require('../validation/auth');
 
 class AuthController extends BaseController
 {
     static register(req, res)
     {
-        let errors = [];
+        const registration = async () => {
 
-        if (!req.body.email) {
-            errors.push('No email provided');
-        }
+            try {
+                const validation = auth.validate(req.body);
+                if (validation.error) {
+                    throw new Error(validation.error.details[0].message)
+                }
+                const users = await User.findAll({ where: {email: req.body.email} });
 
-        if (!req.body.password) {
-            errors.push('Password should not be empty');
-        }
-        User.findAll({ where: {email: req.body.email }}).then((all) => {
-            if (all.length > 0) {
-                errors.push('An account using this email address has already been registered');
-            }
-            if (errors.length === 0) {
-                bcrypt.hash(req.body.password, 10, (err, hash) => {
-                    user.sync({ force: false }).then(() => {
-                        return User.create({
-                            email: req.body.email,
-                            password: hash
-                        });
+                if (users.length > 0) {
+                    throw new Error('An account using this email address has already been registered');
+                } else {
+                    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+                    User.create({
+                        email: req.body.email,
+                        password: hashedPassword
                     });
-                });
-    
-                res.send(req.body);
-            } else {
-                res.send({ errors: errors });
+                    res.send(req.body);
+                }
+            } catch (err) {
+                throw new Error(err.message);
             }
             
+        }
+
+        registration().catch(err => {
+            console.log(err);
+            res.send({errors: [err.message.replace(/Error\s/g, '')]});
         });
     }
 
     static login(req, res, next)
     {
-        User.findAll({ where: { email: req.body.email }}).then((user) => {
-            if (user.length > 0) {
-                const { password, createdAt, updatedAt, ...data } = user[0].dataValues;
-                bcrypt.compare(req.body.password, password, (err, valid) => {
-                    if (valid) {
-                        jwt.sign({data}, 'secretKey', { expiresIn: '604800s' }, (err, token) => {
-                            res.send({token});
-                        });
-                    } else {
-                        res.send({errors: ['Incorrect password']});
-                    }
-                });
-            } else {
-                res.send({errors: ['No such email']});
-            }
-            
-        });
+        const verifyPassword = async () => {
+            try {
+                const requestedUserData = await User.findAll({where: {email: req.body.email}});
 
-        // res.send(req.body);
+                if (requestedUserData.length === 0) {
+                    throw new Error('No such email');
+                }
+
+                const { password, createdAt, updatedAt, ...data } = requestedUserData[0].dataValues;
+                
+                const match = await bcrypt.compare(req.body.password, requestedUserData[0].dataValues.password);
+
+                if (match) {
+                    jwt.sign({data}, 'secretKey', { expiresIn: '604800s' }, (err, token) => {
+                        res.send({token});
+                    });
+                } else {
+                    throw new Error('Wrong password');
+                }
+            } catch (err) {
+                throw new Error(err.message);
+            }
+        }
+
+        verifyPassword().catch(err => {
+            console.log(err);
+            res.send({errors: [err.message.replace(/Error\s/g, '')]});
+        });
     }
 
     static verifyToken(req, res, next)

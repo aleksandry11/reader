@@ -2,41 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="722ebc70-0fae-4368-89fe-839bf2969820" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reader/src/actions/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader/src/components/books/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader/src/reducers/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader/src/requests/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader/src/sagas/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/reader/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/reader/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/actinoTypes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/actions/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/actions/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/api_client/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/requests/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/api_client/interceptors.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/requests/interceptors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/api_client/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/requests/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/components/auth/AuthPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/components/auth/AuthPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader/src/components/auth/forms/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/components/auth/forms/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader/src/components/forms/renderField.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/components/forms/renderField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/containers/auth/Unauthorized.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/containers/auth/Unauthorized.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/containers/books/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/containers/books/BookList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/middleware/logger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/reducers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/reducers/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/routes/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/sagas/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/sagas/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/sagas/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/AuthController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/AuthController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/auth/login/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/auth/signup/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/BaseTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/Book.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/Bookmark.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader/src/requests/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/reader/src/requests/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/BookController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/BookController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,27 +21,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reader/src/actions/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reader/src/reducers/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="70" column="48" lean-forward="true" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reader/src/containers/auth/Auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
+            <state relative-caret-position="-858">
               <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -77,12 +33,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reader/src/containers/books/BookList.js">
+        <entry file="file://$PROJECT_DIR$/reader/src/reducers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+            <state relative-caret-position="1586">
+              <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reader/src/reducers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +57,52 @@
         <entry file="file://$PROJECT_DIR$/reader/src/components/forms/renderField.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reader/src/components/auth/AuthPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reader/src/components/auth/forms/Signup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reader/src/requests/book.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reader/src/components/auth/forms/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,48 +110,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-224">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reader/src/sagas/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="244">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reader/src/requests/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reader/src/requests/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reader/src/reducers/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -185,11 +167,12 @@
         <option value="$PROJECT_DIR$/reader/src/sagas/index.js" />
         <option value="$PROJECT_DIR$/reader/src/actions/book.js" />
         <option value="$PROJECT_DIR$/reader/src/containers/books/BookList.js" />
+        <option value="$PROJECT_DIR$/reader/src/reducers/book.js" />
+        <option value="$PROJECT_DIR$/reader/src/sagas/book.js" />
+        <option value="$PROJECT_DIR$/reader/src/components/auth/forms/Signup.js" />
         <option value="$PROJECT_DIR$/reader/src/components/forms/renderField.js" />
         <option value="$PROJECT_DIR$/reader/src/requests/book.js" />
-        <option value="$PROJECT_DIR$/reader/src/reducers/book.js" />
         <option value="$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js" />
-        <option value="$PROJECT_DIR$/reader/src/sagas/book.js" />
       </list>
     </option>
   </component>
@@ -217,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,14 +223,7 @@
               <item name="reader" type="462c0819:PsiDirectoryNode" />
               <item name="reader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actionTypes" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reader" type="b2602c69:ProjectViewProjectNode" />
@@ -256,6 +231,33 @@
               <item name="reader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reader" type="b2602c69:ProjectViewProjectNode" />
@@ -300,31 +302,19 @@
               <item name="reader" type="462c0819:PsiDirectoryNode" />
               <item name="reader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sagas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/OpenServer/OSPanel/domains/track" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -354,17 +344,18 @@
       <updated>1564658648640</updated>
       <workItem from="1564658649730" duration="9263000" />
       <workItem from="1564731022027" duration="17385000" />
+      <workItem from="1564986651910" duration="11000" />
+      <workItem from="1564989446847" duration="10994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26648000" />
+    <option name="totallyTimeSpent" value="37653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -436,25 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/components/auth/forms/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/components/auth/AuthPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reader/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -469,13 +441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/components/books/AddBook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/components/books/AddBook.js" />
     <entry file="file://$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -487,16 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -544,52 +500,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/components/forms/renderField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reader/src/requests/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/requests/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/containers/auth/Auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/reducers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="70" column="48" lean-forward="true" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/reader/src/reducers/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
+        <state relative-caret-position="598">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/AuthController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/reader/src/containers/books/BookList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
+        <state relative-caret-position="842">
           <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -597,23 +525,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js">
+    <entry file="file://$PROJECT_DIR$/reader/src/components/auth/forms/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="338">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/containers/auth/Auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/components/auth/AuthPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/components/auth/forms/Signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/reducers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1586">
+          <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/components/forms/renderField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reader/src/sagas/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="244">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/components/books/forms/AddBookForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader/src/requests/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>

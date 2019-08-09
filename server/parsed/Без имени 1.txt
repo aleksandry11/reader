@@ -1,0 +1,160 @@
+1. Google Console Project Creation 
+ 
+ 
+1.1 Go to https://console.developers.google.com 
+1.2. select my projects (1), new project(2) 
+ 
+ 
+ 
+1.3.Enter Project name – as you wish. → create 
+ 
+ 
+2. 
+Enable 
+Google 
+Drive 
+API 
+Servic
+es 
+ 
+ 
+2.1 Click 
+“ENABL
+E APIS 
+AND 
+----------------Page (0) Break----------------
+SERVICES” 
+ 
+ 
+ 
+2.2. In opened page search for Google Drive Api. Select it and enable. 
+ 
+2.3. After drive api is activated, you need to create credentials. 
+ 
+ 
+ 
+3. Service Account Creation 
+ 
+ 
+3.1 Credentials 
+3.1.1 Select for Google Drive Api. 
+3.1.2 Where will you be calling the API from – Web server(e.g. node.js, Tomcat). 
+3.1.3 What data will you be accessing – application data; 
+3.1.4 Are you planning to use this API Engine or Compute Engine – No, I’m not 
+using them. 
+ 
+3.2. Click “What credentials do I need?”. 
+ 
+ 
+3.3 Service Account 
+----------------Page (1) Break----------------
+3.3.1 Enter service account name – any desirable name. 
+3.3.2 Chose Role → Project → Owner 
+3.3.3 Key type should be JSON. 
+ 
+3.4 Click “Continue”; 
+ 
+ 
+ 
+4. Get 
+Crede
+ntials 
+Infor
+matio
+n 
+ 
+ 
+4.1 
+Open 
+downlo
+aded 
+file and 
+copy 
+it’s 
+content. Then paste it to the textbox in the plugin admin page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+----------------Page (2) Break----------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5. Google Drive Folder Creation And Sharing With Google 
+Service Account 
+ 
+ 
+5.1 In your Google Console Page go to ‘Credentials’. Click on the link 
+‘manage service accounts’. 
+ 
+ 
+ 
+ 
+ 
+ 
+5.2 In the opened window copy service account email. 
+ 
+----------------Page (3) Break----------------
+ 
+ 
+5.3 Go to Google Drive now (https://www.google.com/drive/ ) and create a 
+new folder, where you want your images to be stored. 
+ 
+5.4 Right Click on that folder and select ‘Share’. In the opened window paste 
+your serivce account email and click ‘send’. 
+ 
+ 
+ 
+ 
+5.5. 
+Open 
+your 
+newly 
+creat
+ed file 
+on 
+googl
+e 
+drive 
+and 
+copy 
+it’s id 
+from 
+url. 
+Then 
+paste it to plugin admin page in the “ID of the folder to store uploaded files” 
+field. 
+ 
+ 
+----------------Page (4) Break----------------
+ 
+ 
+ 
+ 
+6. In Your Contact Form, tag file upload must have name 
+‘user_file_upload’. 
+ 
+ 
+ 
+----------------Page (5) Break----------------

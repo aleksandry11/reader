@@ -1,6 +1,10 @@
 html, body {
   min-height: 100vh;
 }
+
+iframe {
+  border: none;
+}
 #root {
   min-height: 100vh;
 }
@@ -21,10 +25,6 @@ html, body {
   position: relative;
 }
 .App a {
-  margin: 0 5px;
-  padding: 7px 14px;
-  background-color: black;
-  color: white;
   display: inline-block;
   text-decoration: none;
 }
@@ -61,6 +61,12 @@ html, body {
 
 .App-link {
   color: #61dafb;
+}
+
+form.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes App-logo-spin {

@@ -1,11 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import validate from '../../../utils/validate';
-import renderField from '../../forms/renderField';
 import styles from './AddBookForm.module.scss';
 
+const adaptFileEventToValue = delegate => e => delegate(e.target.files[0]);
+
+const FileInput = ({
+       input: { value: omitValue, onChange, onBlur, ...inputProps },
+       meta: omitMeta,
+       reference, id,
+   }) => {
+    return (
+        <input
+            onChange={adaptFileEventToValue(onChange)}
+            onBlur={adaptFileEventToValue(onBlur)}
+            type="file"
+            ref={reference}
+            id={id}
+        />
+    );
+};
+
 const AddBookForm = ({ handleSubmit }) => {
-    const [files, setFiles] = useState([]);
     const fileInput = React.createRef();
 
     const handleClick = (e) => {
@@ -13,12 +29,10 @@ const AddBookForm = ({ handleSubmit }) => {
         const input = fileInput.current;
         input.click();
     }
-    const updateFilesCb = (e) => {
-        setFiles([...fileInput.current.files]);
-    }
+
     return (
         <form onSubmit={handleSubmit} className="add-book">
-            <Field name="add_book" type="file" component={renderField} id="add-book" reference={fileInput} changeCb={updateFilesCb} />
+            <Field name="addBook" type="file" component={FileInput} id="add-book" reference={fileInput} />
             <div className={styles.wrapper}>
                 <button onClick={handleClick} className={styles.select}>Choose a book</button>
                 <button type="submit" className={styles.upload}>Upload</button>

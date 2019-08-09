@@ -16,6 +16,6 @@ const SignUpForm = ({ handleSubmit }) => {
 }
 
 export default reduxForm({
-  form: 'signup',
+  form: 'sign-up',
   validate
 })(SignUpForm);
